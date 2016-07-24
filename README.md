@@ -31,3 +31,7 @@ $ cd <project folder>
 $ docker-compose up -d
 ```
 
+### Examples
+* http://localhost/places/search?query=auto1+Berlin
+* http://localhost/places/search?query=burritos+in+Berlin
+* http://localhost/places/search?query=ramen+in+Tokyo
