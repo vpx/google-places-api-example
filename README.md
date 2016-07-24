@@ -31,6 +31,9 @@ $ cd <project folder>
 $ docker-compose up -d
 ```
 
+
+#### If you don't want using docker you can config your own web-server. Just use [this](/docker/nginx/vhost.conf) nginx config. 
+
 ### Examples
 * http://localhost/places/search?query=auto1+Berlin
 * http://localhost/places/search?query=burritos+in+Berlin
