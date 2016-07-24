@@ -16,7 +16,7 @@ Look here
 * https://beta.docker.com
 * https://docs.docker.com/installation/mac
 * https://github.com/dduportal/boot2docker-vagrant-box
-* https://kitematic.com (preffered)
+* https://kitematic.com
 
 ### Build environment
 
