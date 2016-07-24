@@ -1,0 +1,27 @@
+{
+  "name": "vpx/google-places-api-example",
+  "license": "proprietary",
+  "type": "project",
+  "description": "Simple example how to use Google Places API",
+  "autoload": {
+    "psr-4": {
+      "VP\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpmd/phpmd": "2.2.*",
+    "phpunit/phpunit": "5.4.*",
+    "squizlabs/php_codesniffer": "3.0.0a1"
+  },
+  "config": {
+    "platform": {
+      "php": "7.0"
+    }
+  },
+  "minimum-stability": "stable"
+}
