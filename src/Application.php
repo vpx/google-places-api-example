@@ -20,15 +20,16 @@ class Application
     }
 
     /**
-     * This method runs the best application in the world
+     * This method runs the best application in the world!
      */
     public function run()
     {
         header('Content-Type: application/json;charset=UTF-8');
 
         try {
-            list($callback, $parameters) = $this->router->match();
-            $response = call_user_func_array($callback, array_values($parameters));
+            $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+            parse_str($_SERVER['QUERY_STRING'], $parameters);
+            $response = call_user_func_array($this->router->match($url), [$parameters]);
         } catch (\Throwable $e) {
             http_response_code($e->getCode());
             $response = ['error' => $e->getMessage()];

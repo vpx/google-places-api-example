@@ -31,6 +31,17 @@ $ cd <project folder>
 $ docker-compose up -d
 ```
 
+## Access container shell
+
+```sh
+$ docker exec -it gpa /bin/bash
+```
+
+## Testing
+
+```sh
+$ docker exec -it gpa make test
+```
 
 #### If you don't want using docker you can config your own web-server. Just use [this](/docker/nginx/vhost.conf) nginx config. 
 

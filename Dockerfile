@@ -23,8 +23,8 @@ RUN apt-get update -y \
         php7.0-fpm \
         php7.0-intl \
         php7.0-mbstring \
+        php-xdebug \
         php7.0-zip \
-        supervisor \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /run/php/

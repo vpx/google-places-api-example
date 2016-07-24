@@ -4,6 +4,6 @@ namespace VP\Exception;
 /**
  * @author Vitalii Piskovyi <vitalii.piskovyi@gmail.com>
  */
-interface ExceptionInterface
+class BadResponseException extends \RuntimeException implements ExceptionInterface
 {
 }

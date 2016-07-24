@@ -23,17 +23,15 @@ class Router
     }
 
     /**
-     * @return array
+     * @param string $url
+     *
+     * @return callable
      */
-    public function match(): array
+    public function match(string $url): callable
     {
-        $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
         foreach ($this->routes as $pattern => $callback) {
-            if (preg_match($pattern, $url, $parameters)) {
-                array_shift($parameters);
-
-                return [$callback, $parameters];
+            if (preg_match($pattern, $url)) {
+                return $callback;
             }
         }
 
