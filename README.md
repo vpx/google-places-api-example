@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vpx/google-places-api-example.svg?branch=master)](https://travis-ci.org/vpx/google-places-api-example)
+
 ## Overview
 
 Simple example of using the Google Places API.
