@@ -16,7 +16,7 @@ $router->add('/', function () {
     header('Location: http://localhost/places/search?query=burritos+in+Berlin');
 });
 
-$router->add('/places/search', function ($parameters) {
+$router->add('/places/search', function (array $parameters) {
     $placesClient = new ApiClient(new Client(new Curl(), 30));
     $foundPlaces  = $placesClient->textSearch($parameters);
 
