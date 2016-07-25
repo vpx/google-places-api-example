@@ -7,7 +7,7 @@ namespace VP\GooglePlaces;
 interface ApiClientInterface
 {
     const GPA_URI = 'https://maps.googleapis.com/maps/api';
-    const GPA_KEY = 'AIzaSyB1NK2khSMCWDAIUa2ZJqiUMW6PycmVI_0';
+    const GPA_KEY = 'AIzaSyCbMJ4KOpp6wB4Cs60UtrDV_mTSL67zhe8';
 
     const STATUS_OK               = 'OK';
     const STATUS_INVALID_REQUEST  = 'INVALID_REQUEST';
