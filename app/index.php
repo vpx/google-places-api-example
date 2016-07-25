@@ -13,10 +13,11 @@ ini_set('display_errors', 1);
 $router = new Router();
 
 $router->add('/', function () {
-    header('Location: http://localhost/places/search?query=burritos+in+Berlin');
+    $exampleUrl = sprintf('http://%s/places/search?query=burritos+in+Berlin', $_SERVER['HTTP_HOST']);
+    header('Location: ' . $exampleUrl);
 });
 
-$router->add('/places/search', function ($parameters) {
+$router->add('/places/search', function (array $parameters) {
     $placesClient = new ApiClient(new Client(new Curl(), 30));
     $foundPlaces  = $placesClient->textSearch($parameters);
 
