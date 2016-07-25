@@ -187,7 +187,7 @@ class ApiClientTest extends \PHPUnit_Framework_TestCase
      */
     private function getDefaultParameters(): array
     {
-        return ['query' => 'foo', 'key' => 'AIzaSyB1NK2khSMCWDAIUa2ZJqiUMW6PycmVI_0'];
+        return ['query' => 'foo', 'key' => 'AIzaSyCbMJ4KOpp6wB4Cs60UtrDV_mTSL67zhe8'];
     }
 
     /**
